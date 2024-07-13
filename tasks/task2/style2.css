@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0PX;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: rgb(24, 24, 24);
+}
+
+.box1{
+    display: inline-block;
+   
+    margin-bottom: 80px;
+}
+
+h1{
+    color: rgb(255,255,255);
+    
+}
+
+img{
+    border-radius: 8%;
+    height: 300px;
+    width: 450px;
+}
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.sp-one
+{
+    color: #b79632;
+    font-weight: 800;
+    font-size: 50px;
+}
