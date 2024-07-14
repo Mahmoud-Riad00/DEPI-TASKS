@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url('https://images.pexels.com/photos/957061/milky-way-starry-sky-night-sky-star-957061.jpeg?cs=srgb&dl=pexels-felixmittermeier-957061.jpg&fm=jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parent{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+   flex-direction: column;
+  
+    position: relative;
+   
+}
+.child{
+    margin: 10px;
+    width: 100vw;
+    height: 1000px;
+    
+}
+.child img{
+    height: 200px;
+    width: 200px;
+}
+.child:nth-child(1){
+    display: flex;
+    justify-content: right;
+}
+.child:nth-child(2){
+  
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    animation-name: text;
+    
+   
+}
+
+.child:nth-child(3) img{
+    animation-name: rocket;
+    animation-delay: 5S;
+    animation-duration:5s;
+    animation-fill-mode:forwards;
+    
+   position: relative;
+}
+
+@keyframes text {
+    0%{
+        content: "3";
+    }
+    10%{ 
+       content: "2";
+    }
+   20%
+    { 
+     
+       content: "1";
+    }
+    30%
+    {
+        content: "lunch";
+    }
+}
+.sp-1::after{
+    animation-name: text;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-fill-mode:forwards ;
+    content: "";
+    font-family: "Honk", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200px;
+}
+@keyframes rocket {
+     
+    
+    40%{
+        top: 0px;
+        
+    }
+    60%{
+        top: -540px; 
+        transform: rotate(0);
+    }
+
+    80%{
+        top: -540px;
+        left: 0px;
+        transform-origin: center center;
+        transform: rotate(90deg);
+    }
+    100%{
+        top: -540px;
+        transform-origin: center center;
+        transform: rotate(90deg);
+        left: 1450px;
+    } 
+}
