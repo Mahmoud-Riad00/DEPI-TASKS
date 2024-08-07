@@ -79,10 +79,7 @@
 //     }
 // }
 // problemOne(2)  
-function problemOne(x , y){
-    for(var z=1 ; z <= y ; y = y + 1){
-        لانمكوطظ.
- /        
-    }
-}
-problemOne(15)
+// function problemOne(x , y){
+    // for(var z=1 ; z <= y ; y = y + 1){
+
+// problemOne(15)
