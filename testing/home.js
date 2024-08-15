@@ -83,3 +83,42 @@
     // for(var z=1 ; z <= y ; y = y + 1){
 
 // problemOne(15)
+
+
+// var SORA = document.querySelector('img') 
+// var nxt =document.querySelector('.nxt')
+// var prev=document.querySelector('.prev')
+// var x=0
+// swrArray =['https://mytrainingmap.com/images/destinations/311/bdb65b6e-7ae1-46b9-a578-73831bc8807e.jpg','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeKIXqpMIzNtUuDYqa00P3qwFKhqzG9jc1dzWkDvW0cwAzRbTpDVnbmafFcpRRzf2Dfww&usqp=CAU','https://www.imgacademy.com/sites/default/files/styles/scale_1700w/public/2022-07/img-homepage-meta_0.jpg?itok=LMirU0Ik']
+// console.log(x)
+
+// nxt.addEventListener('click',function(){
+//     x++
+//     if(x>2){
+//         x=0
+//     }
+//     SORA.src= swrArray[x]
+//     console.log(x)
+// })
+// prev.addEventListener('click',function(){
+//     x--
+//     if(x == -1){
+//         x=2;
+//     }
+//     SORA.src= swrArray[x]
+//     console.log(x)
+// })
+// console.log(x)
+
+var smallImgs =document.querySelectorAll(".small_img img")
+var big =document.querySelector(".large_image img")
+console.log(big)
+smallImgs.forEach(
+    
+        function(x){
+          x.addEventListener('click',function(){
+           big.src=x.src
+          })
+        }
+    
+);

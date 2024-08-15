@@ -1,0 +1,26 @@
+.small_img img{
+    height: 110px;
+    border-radius: 10px;
+    margin:10px;
+}
+.large_image img{
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8PX;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.small_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    MARGIN: 150PX;
+
+}
