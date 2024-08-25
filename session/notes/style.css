@@ -101,7 +101,6 @@ form {
   color: aliceblue;
 }
 .Buttons {
-  width: 40%;
   height: 100%;
 
   display: flex;
@@ -136,4 +135,13 @@ form {
     padding: 10px 28px;
     border-radius: 18px;
     color: aliceblue;
+  }
+  @media screen and (max-width: 600px) {
+   .newNoteContainer {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    }
   }
