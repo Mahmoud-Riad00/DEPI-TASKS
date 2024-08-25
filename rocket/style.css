@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    background-image: url('./Images/Space.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+.chickens{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+}
+.chickens img{
+    height: 70px;
+}
+.rocket{
+    bottom: 0px;
+    left: 0px;
+}
+.rocket img{
+    height: 100px;
+    position: relative;
+    z-index: 5;
+}
+.bullet{
+    height: 150px;
+    bottom: 0px;
+    position: absolute;
+    left: 60PX;
+}

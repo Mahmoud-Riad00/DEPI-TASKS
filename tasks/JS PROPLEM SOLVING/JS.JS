@@ -1,8 +1,10 @@
 var data=[1,0]
 function problemOne(x){
 console.log(data[x])
+console.log(!x)
 }
-problemOne()
+problemOne(1)
+
 // -------------------------------------------------------------------------------------------------------------------------------------------
 var sum =[]
 function problemtwo(y){
@@ -19,7 +21,9 @@ console.log(sum)
 console.log('sum=' + (c + v + z))
 
 }
-problemtwo()
+problemtwo(123)
+
+
 
 // ----------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -42,7 +46,9 @@ function filterArray(array)
                     numbers.push(array[i]);
                     }
         }
+        
 }
+
 var array=[1, 2, "a", "b"]
 filterArray(array)
 console.log('numbers=' +numbers)
@@ -57,13 +63,13 @@ function animallegs(animals)
     var chicken = animals[0];
     var cows = animals[1];
     var pigs =animals[2];
-sum = (chicken * 2) + (cows *4) +(pigs *4)
+LEGSsum = (chicken * 2) + (cows *4) +(pigs *4)
 }
 
 animals=[2,3,5]
 animallegs(animals)
 
-console.log('sum=' + sum)
+console.log('sum=' + LEGSsum)
 
 
 
@@ -72,8 +78,17 @@ console.log('sum=' + sum)
 
 
 
+// ---------------------------------------------------------------------------------------------------------------------------------------------
+ 
 
-
+function proplemZ(y){
+   var sumee=0
+     y.toString().split('').forEach(function(v){
+        sumee=sumee+ +v
+    })
+    console.log(sumee)
+}
+proplemZ(123)
 
 
 
