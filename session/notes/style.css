@@ -1,89 +1,228 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 .container {
-  width: 100%;
-  height: auto;
+  width: 100vw;
+  height: 100vh;
   background-color: #1D1F26;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
 }
 
 form {
-  width: 100%;
-  height: auto;
+  width: 50%;
+  height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; /* Stack elements vertically */
 }
 
-.title-input,
+.title-input {
+  padding: 7px;
+  border-radius: 15px;
+  margin: 5px;
+  background-color: #1D1F26;
+  border-bottom: 10px;
+  color: white;
+}
+
+.title-input:focus,
+.descreption-input:focus,
+.title-input:hover,
+.descreption-input:hover {
+  border-color: #0BD904;
+  outline: none;
+}
+
 .descreption-input {
   padding: 10px;
   border-radius: 15px;
   margin: 5px;
   background-color: #1D1F26;
   color: white;
-  width: 90%; /* Make inputs wider on mobile */
 }
 
 .btn,
-.formUpdate,
-.optionButton {
-  width: 100%; /* Full width on mobile */
-  padding: 10px;
+.formUpdate {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+  padding: 12px 24px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.btn,
+.formUpdate {
   margin-top: 15px;
 }
 
+.btn:hover,
+.formUpdate:hover {
+  background-color: #333;
+  color: #0BD904;
+  border-color: #0BD904;
+}
+
+button:active {
+  transform: scale(0.9, 0.9);
+}
+
 .notes {
-  width: 100%;
+  width: 70%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  margin-top: -100px;
+}
+
+.widths {
+  width: 100vw;
+  background-color: #1D1F26;
+  display: flex;
+  justify-content: center;
+  align-items: start;
 }
 
 .newNoteContainer {
-  width: 100%;
+  width: 70%;
   background-color: #333740;
   padding: 10px;
   border-radius: 15px;
   margin: 5px;
+  padding: 25px;
+  height: fit-content;
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column; /* Stack items */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.optionButton {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+  padding: 12px 24px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.optionButton:hover {
+  background-color: #333;
+  color: #0BD904;
+  border-color: #0BD904;
+}
+
+.Buttons {
+  height: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
 .note {
-  width: 90%; /* Adjust note width */
-  padding: 10px;
-  background-color: #44484D;
+  width: 60%;
+  color: white;
+}
+
+.note h3 {
+  margin: 10px;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.hide {
+  display: none;
+}
+
+.delete {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+  padding: 12px 24px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete:hover {
+  background-color: #333;
+  color: #FD0100;
+  border-color: #FD0100;
+}
+
+.card {
+  background-color: #333740;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border-radius: 10px;
-  margin: 5px 0;
+  padding: 55px 40px;
 }
 
 @media screen and (max-width: 600px) {
-  /* Additional mobile styles */
   .container {
-    padding: 10px; /* Less padding for smaller screens */
+    height: auto; /* Allow height to adjust */
+    padding: 10px; /* Add padding */
+  }
+
+  form {
+    width: 90%; /* Make form width responsive */
+    height: auto; /* Allow height to adjust */
   }
 
   .title-input,
   .descreption-input {
-    width: 90%; /* Make inputs wider */
+    width: 100%; /* Full width for inputs */
+  }
+
+  .btn,
+  .formUpdate,
+  .optionButton {
+    width: 100%; /* Full width for buttons */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .notes {
+    width: 100%; /* Make notes section full width */
+    height: auto;
+  }
+
+  .newNoteContainer {
+    width: 90%; /* Adjust new note container width */
+    flex-direction: column; /* Stack items vertically */
   }
 
   .note {
-    width: 90%; /* Adjust note width */
+    width: 90%; /* Adjust note width for mobile */
   }
 
   .card {
-    padding: 30px; /* Adjust padding for mobile */
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+  body{
+    height: 100vh;
   }
 }
