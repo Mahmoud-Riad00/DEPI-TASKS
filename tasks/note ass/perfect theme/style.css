@@ -157,7 +157,7 @@ button:active{
     }
   }
   .card{
-    width: 50%;
+    width: calc(100vh - 50%(100vh));
     height: 100%;
     background-color:#333740;
     display: flex;
