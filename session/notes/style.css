@@ -1,172 +1,89 @@
 * {
   box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
+
 .container {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: auto;
   background-color: #1D1F26;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  padding: 20px;
 }
+
 form {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column; /* Stack elements vertically */
 }
-.title-input {
-  padding: 7px;
-  border-radius: 15px;
-  margin: 5px;
-  background-color:#1D1F26;
-  border-bottom: 10px;
-  color: white;
-}
-.title-input:focus,
-.descreption-input:focus ,.title-input:hover,
-.descreption-input:hover {
-    border-color: #0BD904;
-    outline: none;
-}
+
+.title-input,
 .descreption-input {
   padding: 10px;
   border-radius: 15px;
   margin: 5px;
   background-color: #1D1F26;
   color: white;
+  width: 90%; /* Make inputs wider on mobile */
 }
+
 .btn,
-.formUpdate {
-  background-color: #1e1e1e;
-  color: #f1f1f1;
-  padding: 12px 24px;
-  border: 2px solid #333;
-  border-radius: 8px;
-  font-size: 15px;
-  font-weight: 700;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-}
-.btn,.formUpdate{
+.formUpdate,
+.optionButton {
+  width: 100%; /* Full width on mobile */
+  padding: 10px;
   margin-top: 15px;
 }
-.btn:hover,.formUpdate:hover {
-  background-color: #333;
-  color: #0BD904;
-  border-color: #0BD904;
-}
-button:active{
-  transform: scale(.9,.9);
-}
+
 .notes {
-  width: 70%;
-  height: auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  margin-top: -100px;
 }
-.widths {
-  width: 100vw;
 
-  background-color: #1D1F26;
-  display: flex;
-  justify-content: center;
-  align-items: start;
-}
 .newNoteContainer {
-  width: 70%;
+  width: 100%;
   background-color: #333740;
   padding: 10px;
   border-radius: 15px;
   margin: 5px;
-  padding: 25px;
-  height: fit-content;
-  width: 100%;
-  height: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.optionButton{
-  background-color: #1e1e1e;
-  color: #f1f1f1;
-  padding: 12px 24px;
-  border: 2px solid #333;
-  border-radius: 8px;
-  font-size: 15px;
-  font-weight: 700;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-}
-.optionButton:hover {
-  background-color: #333;
-  color: #0BD904;
-  border-color: #0BD904;
-}
-.Buttons {
-  height: 100%;
-  padding: 15px;
-  display: flex;
-  justify-content: end;
-  align-items: center;
+  flex-direction: column; /* Stack items */
 }
 
 .note {
-  width: 60%;
-  color: white;
-}
-.note h3 {
-  margin: 10px;
-  font-size: 25px;
-  font-weight: 900;
-}
-.hide {
-  display: none;
+  width: 90%; /* Adjust note width */
+  padding: 10px;
+  background-color: #44484D;
+  border-radius: 10px;
+  margin: 5px 0;
 }
 
-.delete{
-  background-color: #1e1e1e;
-  color: #f1f1f1;
-  padding: 12px 24px;
-  border: 2px solid #333;
-  border-radius: 8px;
-  font-size: 15px;
-  font-weight: 700;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: .3s;
+@media screen and (max-width: 600px) {
+  /* Additional mobile styles */
+  .container {
+    padding: 10px; /* Less padding for smaller screens */
+  }
 
+  .title-input,
+  .descreption-input {
+    width: 90%; /* Make inputs wider */
+  }
+
+  .note {
+    width: 90%; /* Adjust note width */
+  }
+
+  .card {
+    padding: 30px; /* Adjust padding for mobile */
+  }
 }
-.delete:hover {
-  background-color: #333;
-  color: #FD0100;
-  border-color: #FD0100;
-  }
-  .card{
-    background-color:#333740;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    padding: 55PX 40PX;
-  }
-  @media screen and (max-width: 600px) {
-  .newNoteContainer {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    }
-  }
