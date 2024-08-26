@@ -184,7 +184,7 @@ button:active {
 
 @media screen and (max-width: 600px) {
   .container {
-    height: auto; /* Allow height to adjust */
+    height: 100%; /* Allow height to adjust */
     padding: 10px; /* Add padding */
   }
 
