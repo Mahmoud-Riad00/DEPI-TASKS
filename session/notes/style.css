@@ -3,7 +3,6 @@
   margin: 0px;
   padding: 0px;
 }
-
 .container {
   width: 100vw;
   height: 100vh;
@@ -13,7 +12,6 @@
   justify-content: space-around;
   align-items: center;
 }
-
 form {
   width: 50%;
   height: 50%;
@@ -21,24 +19,20 @@ form {
   justify-content: center;
   align-items: center;
 }
-
 .title-input {
   padding: 7px;
   border-radius: 15px;
   margin: 5px;
-  background-color: #1D1F26;
+  background-color:#1D1F26;
   border-bottom: 10px;
   color: white;
 }
-
 .title-input:focus,
-.descreption-input:focus,
-.title-input:hover,
+.descreption-input:focus ,.title-input:hover,
 .descreption-input:hover {
-  border-color: #0BD904;
-  outline: none;
+    border-color: #0BD904;
+    outline: none;
 }
-
 .descreption-input {
   padding: 10px;
   border-radius: 15px;
@@ -46,7 +40,6 @@ form {
   background-color: #1D1F26;
   color: white;
 }
-
 .btn,
 .formUpdate {
   background-color: #1e1e1e;
@@ -60,23 +53,17 @@ form {
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
-
-.btn,
-.formUpdate {
+.btn,.formUpdate{
   margin-top: 15px;
 }
-
-.btn:hover,
-.formUpdate:hover {
+.btn:hover,.formUpdate:hover {
   background-color: #333;
   color: #0BD904;
   border-color: #0BD904;
 }
-
-button:active {
-  transform: scale(0.9, 0.9);
+button:active{
+  transform: scale(.9,.9);
 }
-
 .notes {
   width: 70%;
   height: auto;
@@ -87,15 +74,14 @@ button:active {
   flex-wrap: wrap;
   margin-top: -100px;
 }
-
 .widths {
   width: 100vw;
+
   background-color: #1D1F26;
   display: flex;
   justify-content: center;
   align-items: start;
 }
-
 .newNoteContainer {
   width: 70%;
   background-color: #333740;
@@ -110,8 +96,7 @@ button:active {
   justify-content: space-between;
   align-items: center;
 }
-
-.optionButton {
+.optionButton{
   background-color: #1e1e1e;
   color: #f1f1f1;
   padding: 12px 24px;
@@ -123,13 +108,11 @@ button:active {
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
-
 .optionButton:hover {
   background-color: #333;
   color: #0BD904;
   border-color: #0BD904;
 }
-
 .Buttons {
   height: 100%;
   padding: 15px;
@@ -142,18 +125,16 @@ button:active {
   width: 60%;
   color: white;
 }
-
 .note h3 {
   margin: 10px;
   font-size: 25px;
   font-weight: 900;
 }
-
 .hide {
   display: none;
 }
 
-.delete {
+.delete{
   background-color: #1e1e1e;
   color: #f1f1f1;
   padding: 12px 24px;
@@ -163,66 +144,29 @@ button:active {
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
-  transition: 0.3s;
-}
+  transition: .3s;
 
+}
 .delete:hover {
   background-color: #333;
   color: #FD0100;
   border-color: #FD0100;
-}
-
-.card {
-  background-color: #333740;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  padding: 55px 40px;
-}
-
-@media screen and (max-width: 600px) {
-  .container {
-    height: 100%; /* Allow height to adjust */
-    padding: 10px; /* Add padding */
   }
-
-  form {
-    width: 90%; /* Make form width responsive */
-    height: auto; /* Allow height to adjust */
+  .card{
+    background-color:#333740;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 55PX 40PX;
   }
-
-  .title-input,
-  .descreption-input {
-    width: 100%; /* Full width for inputs */
-  }
-
-  .btn,
-  .formUpdate,
-  .optionButton {
-    width: 100%; /* Full width for buttons */
-    padding: 10px; /* Adjust padding */
-  }
-
-  .notes {
-    width: 100%; /* Make notes section full width */
-    height: auto;
-  }
-
+  @media screen and (max-width: 600px) {
   .newNoteContainer {
-    width: 90%; /* Adjust new note container width */
-    flex-direction: column; /* Stack items vertically */
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    }
   }
-
-  .note {
-    width: 90%; /* Adjust note width for mobile */
-  }
-
-  .card {
-    padding: 20px; /* Reduce padding for smaller screens */
-  }
-  body{
-    height: 100vh;
-  }
-}
