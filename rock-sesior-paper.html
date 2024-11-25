@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حجره ورقه مقص</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: darksalmon;
+            flex-direction: column;
+            text-align: center;
+            gap: 100px;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .button{
+            height: 100px;
+            width: 100px;
+            color: white;
+            border-radius:50% ;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .button:hover{
+            background-color: aqua;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>اختااار يااا بييييه</ت>
+    <div class="container">
+        <div class="rock button">حجرة</div>
+        <div class="paper button">ورقة</div>
+        <div class="sassier button">مقص</div>
+    </div>
+
+<script>
+ let sassier=document.querySelector('.sassier');
+ let rock =document.querySelector('.rock')
+ let paper =document.querySelector('.paper')
+ const possibilities = ['paper','rock','sassier'];
+ sassier.addEventListener('click',()=>{
+    let picked = Math.floor(Math.random()*possibilities.length );
+    if(possibilities[picked]=='rock'){
+        alert('الكمبيوتر اختار حجره انت خسرت ابلع ولك قاااااحبه')
+    }else if(possibilities[picked]=='paper'){
+        alert('الكمبيوتر اختار ورقه انت فزت يا عنتيييييييل')
+    }
+    else{
+        alert('الكمبيوتر اختار مقص انت اتعادلت يا نص قحبه')
+    }
+ })
+ paper.addEventListener('click',()=>{
+    let picked = Math.floor(Math.random()*possibilities.length );
+    if(possibilities[picked]=='rock'){
+        alert('الكمبيوتر اختار حجره انت فزت يا عنتيييييل')
+    }else if(possibilities[picked]=='paper'){
+         alert('الكمبيوتر اختار ورقه انت اتعادلت يا نص قحبه')
+    }
+    else{
+        alert('الكمبيوتر اختار مقص انت خسرت ابلع ولك قاااااحبه')
+    }
+ })
+ rock.addEventListener('click',()=>{
+    let picked = Math.floor(Math.random()*possibilities.length );
+    if(possibilities[picked]=='rock'){
+        alert('الكمبيوتر اختار حجره انت اتعادلت يا نص قحبه')
+        
+    }else if(possibilities[picked]=='paper'){
+        alert('الكمبيوتر اختار ورقه انت خسرت ابلع ولك قاااااحبه')
+    }
+    else{
+
+        alert('الكمبيوتر اختار مقص انت فزت يا عنتيييييل')
+    }
+ })
+
+
+</script>    
+</body>
+
+</html>
